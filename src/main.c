@@ -2,6 +2,7 @@
 //
 
 #include "my_header.h"
+#include "math.h"
 #include "stdlib.h"
 #define SEUILB -100
 #define SEUILH 200
@@ -32,7 +33,7 @@ int main(void)
 	 }
 	 
 	 for (k=9; k>0; k=k-1)
-		 dist[k]= dist[k]-dist[k-1];
+		 dist[k]= fabs(dist[k]-dist[k-1]);
 	 
 	 for (l=0; l<N; l++)
 		 b[l] = a[(N-1)-l];
