@@ -39,7 +39,7 @@ int main(void)
 		 b[l] = a[(N-1)-l];
 	 
 	 for (m=M/2; m<M; m++)
-		 miroir[m] = miroir[m-(2*(m-M/2)+1)];
+		 miroir[m] = miroir[-m + M/2 + (M - 1)];
 
 	 return 0;					 
  }
