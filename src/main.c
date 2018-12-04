@@ -13,6 +13,7 @@ int main (void)
 	printf("Age : ");
 	scanf("%d", &age);
 	sprintf(message, "Je m'appelle %s %s et j'ai %d ans", Prenom, Nom, age);
+	printf("%s",message);
 	MessagePopup("Informations Personnelles", message);
 	
 return 0;
