@@ -13,13 +13,13 @@ int main (void)
 	
 	else
 	{
-    sscanf(ligne1,"%*s %s",nom_fig);
+        sscanf(ligne1,"%*s %s",nom_fig);
 	sscanf(ligne2,"%*s %*s %d",&nb_pts);
 	sscanf(ligne3,"%*s %d %*d %d %*d %d %*d %d %*d %d %*d",&x[0], &x[1], &x[2], &x[3], &x[4]);
 	sscanf(ligne3,"%*s %*d %d %*d %d %*d %d %*d %d %*d %d",&y[0], &y[1], &y[2], &y[3], &y[4]);
 	
-	sprintf(message,"La figure %s possède %d sommets",nom_fig,nb_pts);
-	MessagePopup("informations figure",message);
+	sprintf(message,"La figure %s possède %d sommets.",nom_fig,nb_pts);
+	MessagePopup("Informations Figure",message);
 	}
 return 0;
 }
