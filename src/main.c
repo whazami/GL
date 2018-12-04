@@ -1,8 +1,9 @@
+#include "userint.h"
 #include "stdio.h"
 
 int main (void)
 {
-	char Nom[100], Prenom[100];
+	char Nom[100], Prenom[100], message[100];
 	long age = 0;
 	
 	printf("Nom : ");
@@ -11,7 +12,8 @@ int main (void)
 	scanf("%s", Prenom);
 	printf("Age : ");
 	scanf("%d", &age);
-	printf("Je m'appelle %s %s et j'ai %d ans", Prenom, Nom, age);
-
+	sprintf(message, "Je m'appelle %s %s et j'ai %d ans", Prenom, Nom, age);
+	MessagePopup("Informations Personnelles", message);
+	
 return 0;
 }
