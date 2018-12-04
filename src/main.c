@@ -1,9 +1,17 @@
-//  Copyright (c) 2018 Antoine Tran Tan
-//
+#include "stdio.h"
 
-#include "my_header.h"
-
-int main(void)
+int main (void)
 {
-    return 0;
+	char Nom[100], Prenom[100];
+	long age = 0;
+	
+	printf("Nom : ");
+	scanf("%s", Nom);
+	printf("Prenom : ");
+	scanf("%s", Prenom);
+	printf("Age : ");
+	scanf("%d", &age);
+	printf("Je m'appelle %s %s et j'ai %d ans", Prenom, Nom, age);
+
+return 0;
 }
